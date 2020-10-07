@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1821051096 Pham Thi Thu Huyen-Bài thực hành thiết kế website</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            body{
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: #666;
+                   
+                }
+
+
+             
+
+                header {
+                    width: 100%;
+                    height: 180px;
+                    background-color: lightskyblue;
+                }
+
+
+                
+
+                header h1 {
+                    color:white;
+                    padding: 10px;
+                    font-size: 40px;
+                    float: left;
+                    
+                }
+                header  div #head{
+                    overflow: hidden;
+                    background-color:rgb(243, 236, 236);
+
+                }
+                header a img{
+                    float: left;
+                    width: 80px;
+                    height: 50px;
+                }
+               
+                #login{
+                    float:right;
+                    color: black;
+                    padding: 15px;
+                    text-decoration: none;
+                    
+                }
+                .mySlides {
+                    float:right;
+                    display:none;
+                    width:20%;
+                   
+                }
+               
+                main{
+                    color: black;
+                }
+
+
+                section {
+                    padding: 20px;
+                }
+
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    border: 1px solid #e7e7e7;
+                    background-color: #f3f3f3;
+                    
+                }
+
+                nav ul li {
+                    float: left;
+                }
+
+                nav ul li a,
+                .dropbtn {
+                    display: inline-block;
+                    color: #666;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                nav ul li a:hover:not(.active),
+                .dropdown:hover .dropbtn {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+
+                nav ul li.dropdown {
+                    display: inline-block;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .dropdown-content a {
+                    color: #666;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                .active{
+                    background:#4CAF50 ;
+                }
+
+                /* Landing page */
+
+                .hideable-section {
+                    display: none;
+                    margin-left: 100px;
+                    margin-right: 40px;
+                }
+
+                .hideable-section:first-of-type {
+                    display: block;
+                }
+                section a{
+                    margin-right: 20px;
+                }
+            nav input[type=text] {
+                
+                padding-top: 5px;
+                padding-right: 100px;
+                padding-bottom: 5px;
+                padding-left:10px;
+                
+                font-size: 17px;
+                border: none;
+			}
+
+			nav .search-container button {
+ 
+				padding: 12px 20px;
+				
+				margin-right: 16px;
+				background: #ddd;
+				font-size: 17px;
+				border: none;
+				cursor: pointer;
+			}
+
+			nav .search-container button:hover {
+				background: #ccc;
+			}
+
+
+			nav .search-container {
+				float: left;
+			}
+			nav input[type=text], .search-container button {
+				float: none;
+				display: inline;
+				text-align: left;
+				margin: 0;
+				padding: 10px;
+			}
+			nav input[type=text] {
+				border: 1px solid #ccc;  
+			}
+            .col-8{
+                float: left;
+                width: 75%;
+            }
+            .col-4{
+                float: left;
+                width: 25%;
+            }
+            #dl14 img{
+                overflow: hidden;
+                
+                width: 30%;
+                
+               
+                margin-bottom: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div id="head">
+                    <a href="#"><img src="imgs/tải xuống2.png"/></a>
+                    <a href="#" id="login"><i class="fas fa-user"></i><span style="margin-left:3px;margin-right:10px;">Đăng nhập</span></a>
+                    
+                </div>
+                <h1>Ngôn ngữ lập trình</h1>
+                <div>
+                    <img class="mySlides" style="width:150px; height: 130px;" src="imgs/rust-logo-512x512-blk.png">
+                    <img class="mySlides" style="width:150px; height: 130px;" src="imgs/tải xuống.jpg">
+                    <img class="mySlides" style="width:150px; height: 130px;" src="imgs/tải xuống (1).jpg">
+                    <img class="mySlides" style="width:150px; height: 130px;" src="imgs/golang.jpg">
+                    <img class="mySlides" style="width:150px; height: 130px;" src="imgs/tải xuống (2).png">
+                </div>
+               
+            </div>
+        </header>
+        <main>
+        <nav>
+            <ul>
+                <li class="active"><a data-section="tongquan">Tổng quan</a></li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Rust <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a data-section="dl1">Giới thiệu Rust</a>
+                        <a data-section="dl2">Cài đặt Rust</a>
+                        <a data-section="dl3">Hello World</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Python <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a data-section="dl4">Giới thiệu Python</a>
+                        <a data-section="dl5">Cài đặt Python</a>
+                        <a data-section="dl6">Hello World</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Ruby <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a data-section="dl7">Giới thiệu Ruby</a>
+                        <a data-section="dl8">Cài đặt Ruby</a>
+                        <a data-section="dl9">Hello World</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">GoLang <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a data-section="dl10">Giới thiệu GoLang</a>
+                        <a data-section="dl11">Cài đặt GoLang</a>
+                        <a data-section="dl12">Hello World</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Javascript <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a data-section="dl13">Giới thiệu Javascript</a>
+                        <a data-section="dl14">Cài đặt Javascript</a>
+                       
+                    </div>
+                </li>
+            
+            <div class="search-container" style="float:right;">
+                <form action="index.html">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            </ul>
+        </nav>
+    
+        <section id="tongquan" class="hideable-section">
+            <div><p>
+                Một chương trình máy tính (hay còn được gọi là phần mềm hoặc ứng dụng) là một tập hợp các câu lệnh, chúng nói cho máy tính biết phải làm những gì, và các thiết bị trên máy tính thực thi các câu lệnh được gọi là phần cứng. Những tập hợp các câu lệnh được thiết kế để ra lệnh cho máy tính được gọi là Ngôn ngữ lập trình.<br>
+
+                Ngôn ngữ lập trình được chia là 2 loại:<br>
+                <ul style="list-style-type:disc;">
+                    <li><strong><abbr title="Mã máy" style="text-decoration: none;">Ngôn ngữ bậc thấp</abbr></strong>: Một CPU của máy tính không đủ khả năng để hiểu được ngôn ngữ lập trình C++. Chỉ một tập hợp rất hạn chế các chỉ thị mà máy tính hiển nhiên hiểu được, chúng được gọi là mã máy (ngôn ngữ máy hay tập chỉ thị). Hay nói cách khác, ngôn ngữ lập trình bậc thấp cung cấp cho máy tính các chỉ thị rõ ràng, không có tính trừu tượng giúp máy tính có thể hiểu được ngay lập tức.<br></li>
+
+                        Trong khóa học này, chúng ta chỉ quan tâm đến 2 điều:<br>
+                        <ul style="list-style-type:circle;">
+                            <li>Một chỉ thị được hợp thành bởi một số các con số ở dạng nhị phân, nó chỉ có thể là 0 hoặc 1. Những con số dạng nhị phân này thường được gọi là những bit (là đơn vị lưu trữ nhỏ nhất trong máy tính).<br></li>
+
+                            <li>Mỗi tập hợp các số nhị phân được dịch bởi CPU thành các chỉ thị bảo máy tính làm một công việc cụ thể. Ví dụ: so sánh 2 số, lưu một giá trị vào một vùng nhớ máy tính. Mỗi CPU có một tập các chỉ thị khác nhau. Lập trình viên là những người tạo ra mã máy, nó rất khó và tốn thời gian để làm một thứ gì đó.<br></li>
+                        </ul>
+                    <li><strong>Ngôn ngữ lập trình bậc cao</strong>: Ngôn ngữ lập trình bậc cao được thiết kế để lập trình viên viết chương trình mà không cần bận tâm vào loại chương trình máy tính đang chạy trên nó, có thể thấy ngôn ngữ lập trình bậc cao khá gần gũi với ngôn ngữ tự nhiên. Vì thế ngôn ngữ lập trình bậc cao phải được dịch ngược về mã máy để CPU có thể hiểu được chúng.<br></li>
+                </ul>
+                Và thứ giúp lập trình viên thực hiện quá trình biên dịch mã máy này gọi là <strong><abbr title="Trình biên dịch" style="text-decoration: none;">Compiler</abbr></strong>.
+            </p></div>
+        </section>
+    
+        <section id="dl1" class="hideable-section">
+            <div><p>
+                
+                <a href="#" style="float: left;"><img src="imgs/rust-logo-512x512-blk.png"/></a>
+                <strong>Rust</strong> là một ngôn ngữ lập trình được phát triển bởi Mozilla Research và sau đó chủ yếu được phát triển bởi cộng đồng mã nguồn mở. Cha đẻ của Rust là một nhà thiết kế ngôn ngữ Graydon Hoare, Rust được giới thiệu lần đầu vào năm 2010. Rust được xây dựng dựa trên những nguyên lý rõ ràng và vững chắc, Rust chứa đựng những khả năng cũng có trong C và C++, do đó Rust có tốc độ chạy ngang hàng với C++, nhưng lại cho phép lập trình viên viết code an toàn hơn vì không phải đụng chạm nhiều đến xử lý bộ nhớ. Ngoài ra Rust còn có các chức năng hỗ trợ chạy nhiều tiến trình song song trên các máy tính đa lõi.<br>
+                <br>
+                <strong>Những ưu điểm của Rust</strong><br>
+                Một trong những ưu điểm của C++ là tốc độ thực thi nhanh bởi vì C++ cho phép lập trình viên khả năng điều khiển bộ nhớ của máy tính, tuy nhiên điều này lại tăng khả năng crash của ứng dụng do vì việc cấp phát, thu hồi và sử dụng bộ nhớ là một công việc phức tạp.<br>
+                <br>
+                Đối lập với các ngôn ngữ như C++ là các ngôn ngữ như Python, Ruby…v.v đây vốn là các ngôn ngữ đơn giản, dễ sử dụng và an toàn cho lập trình viên, bởi vì các ngôn ngữ này hầu như đã làm tất cả mọi thứ cho người lập trình, tuy nhiên lại không cho phép lập trình viên thực hiện các thao tác ở cấp độ thấp như điều khiển bộ nhớ, do đó thường thì các ứng dụng viết bằng các ngôn ngữ này chạy khá chậm.<br>
+                <br>
+
+                Rust là một ngôn ngữ được tạo ra để giải quyết cả hai vấn đề trên với các tính năng:
+                <ul>
+                    <li>Độ ổn định cao nhờ vào hệ thống kiểm tra kiểu dữ liệu chặt chẽ</li>
+                    <li>Cho phép truy cập sâu vào bên trong hệ thống nhưng vẫn nằm trong tầm kiểm soát</li>
+                </ul>
+                Rust cho phép chúng ta quy định chính xác cách mà các giá trị được lưu trong bộ nhớ và cách bộ nhớ được sử dụng bởi hệ điều hành như thế nào.Chính vì vậy mà Rust làm cho các ứng dụng vừa chạy với tốc độ cao vừa nằm trong vùng an toàn.<br>
+                <br>
+                Ngoài ra Rust loại bỏ tính năng “máy thu dọn rác” xuất hiện trong các ngôn ngữ cấp cao như Java, C#, Python… mặc dù trên thực tế người ta đã từng định thiết kế một cỗ máy thu gom rác cho Rust.<br>
+                <br>
+                <strong>Các điểm mạnh của Rust</strong><br>
+                Rust không phải là một ngôn ngữ mang tính cách mạng với các tính năng hiện đại, tuy nhiên Rust vẫn mang trong mình những kĩ thuật đã được chứng minh trong các ngôn ngữ lập trình xưa cũ mà phần lớn là được phát triển dựa trên C++.<br>
+                <br>
+                Rust được phát triển là một ngôn ngữ lập trình đa mục đích, đa mô hình, bao gồm mô hình lập trình mệnh lệnh, lập trình cấu trúc và lập trình hướng đối tượng. Ngoài ra ngôn ngữ này cũng kế thừa khá nhiều từ các ngôn ngữ lập trình chức năng và các kỹ thuật cấp cao trong lập trình song song.<br>
+                <br>
+
+                
+                Tính kiểm tra kiểu dữ liệu của Rust rất chặt chẽ. Trong một số trường hợp, lập trình viên không bị gò bó trong việc khai báo kiểu dữ liệu ngay khi khai báo biến như trong C++/Java, thay vào đó trình biên dịch có thể tự động nội suy ra kiểu dữ liệu dựa trên giá trị khởi tạo.<br>
+                <br>
+                Một vấn đề khá lớn của C/C++ là hay bị leak bộ nhớ, do đó người lập trình C/C++ hay gặp những lỗi về con trỏ, tràn bộ nhớ đệm, con trỏ null…v.v Tất cả những vấn đề đó đều sẽ được giải quyết tự động trong trình biên dịch của Rust bằng cách tự động phát hiện và báo lỗi trước.<br>
+                <br>
+                Rust sử dụng một kiến trúc khá tương đồng với Erlang để thực thi các tác vụ song song. Nói sơ qua thì Rust sẽ chạy các tiến trình trong các luồng, các luồng này sẽ không sử dụng chung bộ nhớ heap mà trao đổi thông qua các channel.<br>
+                <br>
+                Rust cũng được thiết kế để có tính portable như C++, tức là có thể chạy trên nhiều nền tảng phần mềm và phần cứng. Hiện tại Rust có thể chạy trên Linux, Mac OS X, Windows, FreeBSD, Android và iOS. Thậm chí Rust cũng có thể gọi các đoạn code viết bằng C, và bản thân C cũng có thể gọi code viết bằng Rust.<br>
+                <br>
+                <strong>Ứng dụng của Rust</strong><br>
+                Mặc dù Rust được thiết kế để viết ứng dụng hệ thống là chính, tuy nhiên khả năng ứng dụng của ngôn ngữ này cũng rất rộng, Rust có thể được dùng để viết các loại ứng dụng sau đây:
+                <ul>
+                    <li>Trình biên dịch</li>
+                    <li>Các hệ thống cần có hiệu suất cao và độ trễ thấp như thiết bị lái xe, game, thiết bị phát sóng</li>
+                    <li>Ứng dụng phân tán và song song</li>
+                    <li>Ứng dụng thời gian thực</li>
+                    <li>Hệ thống nhúng</li>
+                    <li>Web framework</li>
+                    <li>Các hệ thống lớn và phức tạp</li>
+                </ul>
+                <strong>Servo</strong><br>
+                Mozilla sử dụng Rust để viết nên <strong>Servo</strong>, một trình duyệt web song song.
+            </p></div>
+        </section>
+    
+        <section id="dl2" class="hideable-section">
+            <div><strong>Một vài điểm chú ý khi cài Rust</strong><br>
+                Toolchain management với rustup<br>
+                Rust được cài đặt và quản lý bằng công cụ rustup . Rust có 6 tuần để phát triển các phiên bản và hỗ trợ với số lượng lớn các nền tảng khác nhau. , do đó ở bất kỳ thời gian nào cũng có nhiều phiên bản của Rust. rustup quản lý các phiên bản Rust hỗ trợ một cách thống nhất, cho phép cài đặt Rust từ phiên bản beta và nightly cũng như hỗ trợ thêm biên dịch ra nhiều nền tảng khác nhau.<br>
+                <br>
+                Cấu hình biến mỗi trường PATH
+                Trong quá trình phát triển dụng bằng Rust, tất cả các công cụ được cài đặt tại thư mục %USERPROFILE%\.cargo\bin , và đây là nơi bạn tìm thấy cái phiên bản khác nhau của Rust, bao gồm cả rustc, cargo, and rustup.<br>
+                <br>
+                Theo đó, các developers nên thêm thư mục này vào biến môi trường PATH của họ. Trong quá trình cài đặt, rustup, sẽ cấu hình biến môi trường PATH, nhưng với sự khác nhau giữ các nền tảng, command shells, và lỗi của rustup, những thay đổi với PATH sẽ không bị ảnh hưởng cho đến khi console được khởi động lại, hoặc user đã logged out, hoặc có thể không thành công ở tất cả.<br>
+                <br>
+                Nếu sau khi cài đặt, bạn chạy lệnh rustc --version ở console thất bại, đây là lý do có khả năng nhất.<br>
+                <br>
+                Đối với Windows<br>
+                Với Windows, Rust yêu cầu phải có C++ build tools cho Visual Studio 2013 hoặc mới nhất. Cách đơn giản nhất để có build tools là cài đặt Microsoft Visual C++ Build Tools 2017 sẽ cung cấp Visual C++ build tools. Cách thay thê, bạn có thể cài đặt Visual Studio 2015 hoặc Visual Studio 2013 và trong quá trình cài đặt chọn "C++ tools".<br>
+                <br>
+                Đề tìm hiểu thêm về cấu hình của Rust trên Windows, bạn có thể tham khảo tại Windows-specific rustup .</div>
+        </section>
+    
+        <section id="dl3" class="hideable-section">
+            <div><p>Trong phần này chúng ta sẽ tìm hiểu cách viết một chương trình bằng Rust. File code Rust có phần mở rộng là .rs nên đầu tiên chúng ta tạo một file có tên hello_world.rs và gõ vào đoạn code sau:<br>
+                <br>
+                <pre>
+                fn main() {
+                println!("Hello World");
+                }
+                </pre>
+                <br>
+                Tiếp theo chúng ta biên dịch file hello_world.rs này bằng cách mở command prompt (cmd) lên, chuyển thư mục hiện hành (bằng lệnh cd) đến thư mục chứa file hello_world.rs và gõ lệnh rustc hello_world.rs để biên dịch:
+                <br>
+                <br>
+                <center><img src="imgs/Capture.png"/></center>
+                <br>
+                
+                
+                 
+                Lệnh rustc sẽ biên dịch và nếu biên dịch thành công thì tạo ra 2 file có tên hello_world.pdb và hello_world.exe trên Windows hoặc hello_world trên Linux. Nếu có lỗi thì Rust sẽ báo lỗi biên dịch và không tạo 2 file trên.
+                <br><br>
+                Sau đó chúng ta có thể chạy bằng cách gõ tên file hello_world hoặc ./hello_world (trên Linux) là được:
+                <br><br>
+                <center><img src="imgs/Capture-1.png"/></center>
+                <br>
+                Chúng ta sẽ nhận được kết quả là một dòng chữ “Hello World”. 
+                <br><br>
+                Nếu bạn đã từng làm việc với C/Java/C# thì bạn sẽ thấy đoạn code trên khá quen thuộc. Một chương trình viết bằng Rust bắt đầu chạy ở một điểm xuất phát có tên là hàm main(), tất cả mọi thứ nằm trong cặp dấu {} phía sau fn main() sẽ chạy trước:
+                <br>
+                <pre>
+                fn main() {
+                …
+                }
+                </pre>
+                <br>
+                Chúng ta sẽ tìm hiểu thêm về hàm sau.
+                <br>
+                Bên trong hàm main() này chỉ có một dòng code duy nhất là println!("Hello World"); chuỗi “Hello World” được đặt bên trong một macro có tên println!(); lưu ý dấu chấm than ! ngay phía sau println cho biết đây là một macro chứ không phải một hàm, chúng ta sẽ tìm hiểu về macro sau, macro printlln!() có chức năng in chuỗi nằm bên trong nó ra màn hình console.
+            </p></div>
+        </section>
+
+        <section id="dl4" class="hideable-section">
+            <div><p>
+                <a href="#" style="float: left;"><img src="imgs/tải xuống.jpg"></a>
+                <strong>Python</strong> là một ngôn ngữ lập trình bậc cao cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình. Cấu trúc của Python còn cho phép người sử dụng viết mã lệnh với số lần gõ phím tối thiểu. Vào tháng 7 năm 2018, Van Rossum đã từ chức Leader trong cộng đồng ngôn ngữ Python sau 30 năm lãnh đạo.<br>
+                <br>
+                Python hoàn toàn tạo kiểu động và dùng cơ chế cấp phát bộ nhớ tự động; do vậy nó tương tự như Perl, Ruby, Scheme, Smalltalk, và Tcl. Python được phát triển trong một dự án mã mở, do tổ chức phi lợi nhuận Python Software Foundation quản lý.<br>
+                <br>
+                Ban đầu, Python được phát triển để chạy trên nền Unix. Nhưng rồi theo thời gian, Python dần mở rộng sang mọi hệ điều hành từ MS-DOS đến Mac OS, OS/2, Windows, Linux và các hệ điều hành khác thuộc họ Unix. Mặc dù sự phát triển của Python có sự đóng góp của rất nhiều cá nhân, nhưng Guido van Rossum hiện nay vẫn là tác giả chủ yếu của Python. Ông giữ vai trò chủ chốt trong việc quyết định hướng phát triển của Python<br>
+                
+            </p></div>
+        </section>
+
+        <section id="dl5" class="hideable-section">
+            <div><p>
+                Chạy file bạn download được ở bước trên để bắt đầu cài đặt. Chọn <strong>"Customize Installation"</strong> để bạn có thể tùy chọn ví trí <strong>Python</strong> sẽ được cài đặt ra.<br><br>
+                <center><img src="imgs/7055003.png"/></center>
+                <br><br>
+                <center><img src="imgs/7055013.png"/></center>
+                <br>
+                Chọn vị trí mà <strong>Python</strong> sẽ được cài đặt ra.<br><br>
+                <center><img src="imgs/7055042.png"/></center>
+                <br><br>
+                <center><img src="imgs/7055124.png"/></center>
+                <br><br>
+                Sau khi bạn cài đặt xong Python, nó có thêm một công cụ Python Shell, đây là một IDE (Integrated Development Environment) giúp bạn viết mã Python. Nếu bạn không muốn sử dụng Python Shell bạn có thể sử dụng một IDE khác. Và chắc chắn là bạn sẽ sử dụng một IDE khác tốt hơn, vì Python Shell không phù hợp để bạn phát triển một ứng dụng lớn.
+            </p></div>
+        </section>
+        <section id="dl6" class="hideable-section">
+            <div><p>
+                Trên "Start Menu" của Windows bạn chạy IDLE (Python 3.6 64bit):<br><br>
+                <center><img src="imgs/7055152.png"/></center>
+                <br><br>
+                Chương trình "Python Shell" đã được chạy, nó là một chương trình giúp bạn viết mã Python. Dưới đây là hình ảnh của nó:<br><br>
+
+                <center><img src="imgs/7055254.png"/></center>
+                <br><br>
+                Nhập vào một đoạn code:  print("Hello Python") và nhấn Enter.<br><br>
+                <center><img src="imgs/7055297.png"/></center>
+                <br><br>
+
+                <center><img src="imgs/7055308.png"/></center>
+                <br><br>
+                
+            </p></div>
+        </section>
+        <section id="dl7" class="hideable-section">
+            <div><p>
+                <a href="#" style="float: left;"><img src="imgs/tải xuống (1).jpg"/></a>
+                Ruby là một ngôn ngữ lập trình cấp cao rất khủng. Nó thực sự có thể giúp công việc xây dựng các ứng dụng của bạn trở nên dễ dàng hơn rất nhiều. Là một ngôn ngữ lập trình hướng đối tượng. Đối với những người có kinh nghiệm về python, cú pháp Ruby sẽ trông rất giống với Python. Ngôn ngữ cũng được trang bị tốt với tất cả các công cụ bạn yêu cầu để xây dựng các ứng dụng tinh vi.<br><br>
+
+
+                Nhiều công ty khởi nghiệp ở Thung lũng Silicon đã xây dựng doanh nghiệp của họ trên đỉnh Ruby, ví dụ như Airbnb, Twitch, GitHub và Twitter. Mức độ phổ biến của nó đã được củng cố thêm bởi Ruby on Rails.<br><br>
+
+                Một số tính năng chính của Ruby:<br>
+                <ul>
+                    <li>Ruby cung cấp một loạt các thư viện rất chất</li>
+                    <li>Cú pháp đơn giản</li>
+                    <li>Dễ dàng cho các lập trình viên mới bắt đầu</li>
+                    <li>Là ngôn ngữ lập trình hướng đối tượng</li>
+                </ul>
+            </p></div>
+        </section>
+        <section id="dl8" class="hideable-section">
+            <div><P>
+                <strong>Chạy Ruby Sử Dụng Trình Duyệt</strong><br>
+                Bạn có thể viết và thực thi trên mã lệnh Ruby đơn giản bằng việc sử dụng website <i>tryruby.org</i>.<br>
+
+                Cách làm này có tiên lợi là bạn không phải thực hiện các bước cài đặt tốn thời gian và thích hợp cho những người muốn đi thằng vào khám phá những tính năng của ngôn ngữ. Nhược điểm của nó chỉ đến khi bạn cần thử những tính năng phức tạp của ngôn ngữ Ruby.
+                <br><br>
+                <strong>Cài Đặt Ruby Trên Windows</strong><br>
+                Nếu sử dụng hệ điều hành Windows bạn có thể cài đặt Ruby sử dụng Ruby Installer. Bạn có thể tải Ruby Installer và cài đặt ở địa chỉ này.
+                <br><br>
+                Sau khi cài đặt xong, bạn mở Windows Command Prompt lên và nhập vào câu lệnh sau đó bấm Enter để chạy:<br><br>
+                <pre>
+                > ruby -v
+                </pre><br>
+                Bạn sẽ thấy kết quả tương tự như dưới đây:<br>
+                <pre>
+                > ruby -v
+                ruby 2.1.2p95 (2014-05-08 revision 45877)
+                </pre><br>
+                Trường hợp bạn gặp phải lỗi ruby is not recognized as ... thì có thể bạn sẽ cần phải khởi động lại máy tính.<br><br>
+
+                <strong>MacOS</strong><br>
+                Nếu sử dụng máy tính của Apple, bạn sẽ thấy Ruby đã được cài sẵn trên hệ điều hành MacOS. Để kiểm tra phiên bản nào của Ruby đã được cài đặt, bạn chạy câu lệnh sau:
+                <br><br>
+                <pre>
+                $ ruby -v
+                </pre><br>
+                Kết quả hiển thị sẽ tương tự như sau:<br>
+                <pre>
+                ~ $ ruby -v
+                ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin11.0]
+                </pre><br>
+                Trường hợp phiên bản Ruby được cài đặt trên máy tính bạn quá cũ hoặc bạn muốn cập nhật lên phiên bản mới nhất thì bạn có thể tải bản cài đặt Ruby cho máy Mac ở địa chỉ này.
+                <br><br>
+                <strong>Cài Đặt Ruby Trên Ubuntu</strong><br>
+                Trường hợp bạn sử dụng Ubuntu Linux, việc cài đặt diễn ra khá đơn giản sử dụng package manager apt-get:<br><br>
+                <pre>
+                $ sudo apt-get install ruby-full
+                </pre><br>
+                Sau khi cài đặt xong, tương tự như trên Mac hay Windows, bạn có thể sử dụng terminal và chạy câu lệnh dưới đây để kiểm tra phiên bản Ruby mới được cài đặt:
+                <br><br>
+                <pre>
+                $ ruby -v
+                </pre>
+            </P></div>
+        </section>
+
+        <section id="dl9" class="hideable-section">
+            <div><p>
+                Bước 1: Bạn có thể sử dụng trình chỉnh sửa text bất kỳ (notepad, notepad++, sublime text 3, ...) để tạo 1 file hello-world có đuôi mở rộng là .rb (hello-world.rb). Sau đó viết dòng code bên dưới vào.<br><br>
+
+                <pre>
+                puts "Hello Ruby !"
+                </pre><br>
+                Trong đó từ khóa puts chính là câu lệnh để in ra màn hình, còn chuỗi "Hello Ruby !" sẽ là đoạn text sẽ được xuất ra màn hình với câu lệnh puts.<br>
+
+                Bước 2: Mở Command Prompt lên và dẫn đường dẫn đến tệp vừa tạo ở trên bằng câu lệnh sau<br><br>
+                <pre>
+                cd <đường dẫn tương đối> 
+                </pre><br>
+                hoặc<br>
+                <pre>
+                cd /<đường dẫn tuyệt đối>
+                </pre>
+                Ví dụ: Bạn vừa tạo một tệp tin có đuôi là .rb ở ngoài desktop, để truy cập đến vị trí desktop (nơi chứa tệp vừa tạo) các bạn dùng câu lệnh sau:<br>
+                <pre>
+                cd desktop
+                </pre><br>
+                Khi đó đường dẫn trong bảng Command Promt sẽ thay đổi đường dẫn đến desktop <br>
+
+                Bước 3: Để chạy được file .rb với Ruby, các bạn hãy gõ câu lệnh sau:<br><br>
+                <pre>
+                Ruby hello-world.rb
+                </pre><br>
+                Khi đó kết quả bạn nhận được sẽ là câu chào "Hello Ruby !" do câu lệnh ở trong file hello-world.rb mà bạn đã tạo đã được thực hiện.
+            </p></div>
+        </section>
+
+        <section id="dl10" class="hideable-section">
+            <div><p>
+                <a href="#" style="float: left;"><img src="imgs/golang.jpg"/></a><br>
+                Go là một ngôn ngữ lập trình nguồn mở giúp dễ dàng xây dựng phần mềm đơn giản, đáng tin cậy và hiệu quả. Nó được tạo ra vào năm 2007 bởi gã khổng lồ Google, ban đầu,mục tiêu của Go là nhắm tới sử dụng nội bộ trong các công ty sở hữu cơ sở hạ tầng riêng, nhưng tiềm năng đã đẩy Go dần trở nên phổ biến hơn. Năm 2009, Go chính thức được release và phát triển mạnh mẽ như ngày hôm nay.<br><br>
+
+
+
+                Một số tính năng chính của Go:<br>
+                <ul>
+
+                        <li>Go biên dịch ra nhiều nền tảng: từ máy tính của mình, có thể biên dịch ra các chương trình chạy trên Mac, Window, Linux, sau khi biên dịch, chỉ cần 1 file duy nhất, copy đến hệ điều hành đích là chạy, rất đơn giản. Đây là tính năng ấn tượng nhất, bao gồm cả việc build rất nhanh!</li>
+                        <li>Sử dụng nhiều Core: việc sinh sau đẻ muộn đã tạo ra lợi thế cho nó, phần cứng máy tính có thể mở rộng core, khiến cho Go trở thành ngôn ngữ có thể dễ dàng scale hơn</li>
+
+                        <li>Concurrency và Goroutines: Concurrency là tính năng chủ lực của ngôn ngữ lập trình Go để tận dụng năng lực xử lý của CPU. Khi việc sử dụng bộ vi xử lý multi-core khả thi, Goroutines hoàn toàn có thể thay thế được Thread. Mỗi Goroutines chỉ sử dụng 2KB bộ nhớ từ heap, như vậy bạn có thể tạo ra hàng triệu goroutines bất kỳ lúc nào.</li>
+
+                        <li>Dễ dàng maintain: Cú pháp của Go cực kỳ đơn giản, không có những cú pháp quá phức tạp giống như các ngôn ngữ khác nên rất thuận lợi cho việc maintain</li>
+                </ul>
+                <strong>Fun fact về Go</strong><br>
+                <ul>
+                        <li>Mức lương trung bình của Dev Go trên thế giới là: $ 109,483 mỗi năm. Mức lương trung bình ở Mỹ cho ngôn ngữ lập trình hàng đầu này là 136 nghìn đô/năm.</li>
+                        <li>Go là ngôn ngữ được trả lương cao thứ ba trên toàn cầu trong cuộc khảo sát trên Stack Overflow 2019.</li>
+                        <li>Ngôn ngữ lập trình Go là đứng thứ 4 về độ Active trên GitHub.</li>
+                </ul>
+            </p></div>
+        </section>
+
+        <section id="dl11" class="hideable-section">
+            <div><p>
+            <strong>MacOS</strong>
+
+                Tải bộ cài đặt cho OS X từ https://golang.org/dl/ và cài đặt như hướng dẫn hiện ra, thực hiện theo thông báo hiện ra và Golang sẽ được cài đặt tại <i>/usr/local/go</i> và tự động thêm thư mục <i>/usr/local/go</i> vào biến môi trường PATH.<br><br>
+
+            <strong>Windows</strong>
+
+                Tải về bộ cài đặt dạng msi tại https://golang.org/dl/ và cài đặt theo hướng dẫn hiện ra. Golang sẽ được cài ở <i>C:\Go</i> và sẽ tự động thêm thư mục <i>C:\Go\bin</i> vào biến môi trường path.<br><br>
+
+                <strong>Linux</strong>
+
+                Tải file cài đặt có đuôi tar tại https://golang.org/dl/ và giải nén ở thư mục <i>/usr/local</i>.
+
+                Thêm thư mục <i>/usr/local/go</i> vào biến môi trường PATH, việc này sẽ giúp cho việc cài đặt Go trên Linux được hoàn thiện.
+            </p></div>
+        </section>
+
+        <section id="dl12" class="hideable-section">
+            <div><p>
+                Cài đặt xong rồi thì bắt tay vào code chương trình đầu tiên thôi. Chương trình mà khi học ngôn ngữ mới nào cxung viết Hello word<br><br>
+
+                Chúng ta tạo một file mới, tên là hello.go trong project và gõ đoạn chương trình sau.<br><br>
+                <pre>
+                package main
+
+                import "fmt"
+
+                func main() {
+                    fmt.Printf("Hello World!")
+                }
+                </pre><br>
+                Vậy là xong rồi, chương trình rất đơn giản dễ hiểu phải không nào.<br>
+                Bây giờ hãy compile và chạy chương trình với lệnh:<br><br>
+                <pre>
+                $ go run hello.go
+                </pre>
+                <br><br>hoặc có thể biên dịch ra file thực thi<br><br>
+                <pre>
+                $ go build
+                $ ./hello
+                </pre><br>
+                Output sẽ là:<br>
+                <pre>
+                Hello World!
+                </pre>
+                <br><br>Vậy là đã viết thành công chương trình đầu tiên sử dụng ngôn ngữ golang rồi đó.
+            </p></div>
+        </section>
+
+        <section id="dl13" class="hideable-section">
+            <div><p>
+                <a href="#" style="float: left;"><img src="imgs/tải xuống (2).png"/></a><br>
+                Javascript là một ngôn ngữ lập trình giúp tạo ra các website có tính tương tác. Nó là hệ thống để viết slideshow, pop-up quảng cáo và tính năng autocomplete của google. Cho đến bây giờ, không ai có thể phủ nhận được Javascript là ngôn ngữ lập trình phong phú nhất. Nhìn cú pháp của nó có vẻ lộn xộn tuy nhiên nó phổ biến trên tất cả mọi trình duyệt web và khá dễ để học. Nhờ có coffeescript, nó giúp cho Javascript trông giống như Ruby và Python. Bằng cách loại bỏ dấu ngoặc xoắn, dấu chấm phẩy hay bổ sung thêm khoảng trắng, căn lề thụt đầu dòng làm cho code dễ đọc hơn.<br><br>
+
+                Hiện nay, Javascript là ngôn ngữ được sử dụng nhiều nhất trên Github. Có nhiều trang web được xây dựng trên nền của node. Trong đó có cả những trang lớn như Klout, Storify, Yammer. Cho nên việc đầu tư vào học Js sẽ là một khoản đầu tư có lợi cho tương lai.<br><br>
+
+                Tuy nhiên, Javascript cũng không phải là một ngôn ngữ dễ viết. Nó chỉ thực sự tốt khi có các công cụ khác đi kèm với nó như Node.js, jQuery, Json, MongoDB. Do đó, javascript ngày càng được mở rộng và để giúp ngôn ngữ lập trình ngày càng phát triển. Chính vì thế, không quá sớm để chúng ta kết luận rằng Javascript là tương lai của lập trình.
+
+
+            </p></div>
+        </section>
+
+        <section id="dl14" class="hideable-section">
+            <div>
+                <div>
+                    <div class="col-8">
+                        <p><strong>Máy tính</strong><br>
+                        
+                        Bạn chỉ cần một máy tính có cấu hình tối thiểu. Tuy nhiên nếu sử dụng Windows thì tối thiểu là Windows 7 nhé.</p><br><br>
+                    </div>
+                    <div class="col-4">
+                        <img src="imgs/6874.5_5F00_01C91EBC.png"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-8">
+                        <p><strong>Sublime text editor</strong><br>
+                        Sublime text là phần mềm để bạn có thể viết code Javascript.</p><br><br>
+
+                        <a href="https://www.sublimetext.com/3" style="text-decoration: none;border:1px solid rgb(68, 68, 100); background: rgb(68, 68, 100);color: white;">Download Sublime text 3</a><br><br>
+                    </div>
+                    <div class="col-4">
+                        <img src="imgs/Sublime_Text_3_logo.png"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-8">
+                        <p><strong>Trình duyệt google chrome</strong><br>
+                        Javascript sẽ được chạy trên trình duyệt, vì vậy bạn cần chuẩn bị một trình duyệt mới nhất, ngon nhất.</p><br><br>
+                        
+                        <a href="https://www.google.com/intl/vi_vn/chrome/ " style="text-decoration: none;border:1px solid  rgb(68, 68, 100);background: rgb(68, 68, 100);color: white;">Download Google chrome</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="imgs/512px-Google_Chrome_icon.png"/>
+                    </div>
+                </div>
+            </p></div>
+        </section>
+
+        </main>
+        <script>
+            $(function() {
+                $('nav ul li a').click(function() {
+                    // Lấy section để hiển thị
+                    var $section = $('#' + $(this).data('section'));
+    
+                    // Nếu đang hiện thì không làm gì.
+                    // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
+                    if (!$section.is(':visible')) {
+                        $('.hideable-section').hide();
+                        $section.fadeIn();
+                    }
+                });
+            });
+        
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 2000); 
+            }
+        </script>
+        
+    </body>
+
+</html>
