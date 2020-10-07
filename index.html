@@ -28,12 +28,19 @@
                 
 
                 header h1 {
-                    color:white;
+                    
                     padding: 10px;
-                    font-size: 40px;
+                    
                     float: left;
+                    color: #FFF;
+                    text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
+                    font: Bold 40px Sketch_Block;
                     
                 }
+                h1:hover {
+                    position:relative; top:-3px; left:-3px;/*lệch lên trên về phía bên trái 3px so với chữ NTUTS.COM cũ*/
+                    text-shadow:1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040, 4px 4px #FF8040, 5px 5px #FF8040, 6px 6px #FF8040 /*đặtt shadow 6 lớp để tạo hiệu ứng nâng ảnh*/
+    }
                 header  div #head{
                     overflow: hidden;
                     background-color:rgb(243, 236, 236);
@@ -69,6 +76,7 @@
                 }
 
                 nav ul {
+                    
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
@@ -143,63 +151,72 @@
                 section a{
                     margin-right: 20px;
                 }
-            nav input[type=text] {
+                nav input[type=text] {
+                    
+                    padding-top: 5px;
+                    padding-right: 100px;
+                    padding-bottom: 5px;
+                    padding-left:10px;
+                    
+                    font-size: 17px;
+                    border: none;
+                }
+
+                nav .search-container button {
+    
+                    padding: 12px 20px;
+                    
+                    margin-right: 16px;
+                    background: #ddd;
+                    font-size: 17px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                nav .search-container button:hover {
+                    background: #ccc;
+                }
+
+
+                nav .search-container {
+                    float: left;
+                }
+                nav input[type=text], .search-container button {
+                    float: none;
+                    display: inline;
+                    text-align: left;
+                    margin: 0;
+                    padding: 10px;
+                }
+                nav input[type=text] {
+                    border: 1px solid #ccc;  
+                }
+                .col-8{
+                    float: left;
+                    width: 75%;
+                }
+                .col-4{
+                    float: left;
+                    width: 25%;
+                    
+                }
+                #dl14 img{
+                    overflow: hidden;
+                    
+                    width: 30%;
+                    
                 
-                padding-top: 5px;
-                padding-right: 100px;
-                padding-bottom: 5px;
-                padding-left:10px;
-                
-                font-size: 17px;
-                border: none;
-			}
-
-			nav .search-container button {
- 
-				padding: 12px 20px;
-				
-				margin-right: 16px;
-				background: #ddd;
-				font-size: 17px;
-				border: none;
-				cursor: pointer;
-			}
-
-			nav .search-container button:hover {
-				background: #ccc;
-			}
-
-
-			nav .search-container {
-				float: left;
-			}
-			nav input[type=text], .search-container button {
-				float: none;
-				display: inline;
-				text-align: left;
-				margin: 0;
-				padding: 10px;
-			}
-			nav input[type=text] {
-				border: 1px solid #ccc;  
-			}
-            .col-8{
-                float: left;
-                width: 75%;
-            }
-            .col-4{
-                float: left;
-                width: 25%;
-            }
-            #dl14 img{
-                overflow: hidden;
-                
-                width: 30%;
-                
-               
-                margin-bottom: 50px;
-            }
-
+                    margin-bottom: 50px;
+                }
+                .foot{
+                    float: left;
+                    background: #999;
+                    width: 100%;
+                    padding: 3px;
+                    color: white;
+                    text-align: center;
+                    
+                }
         </style>
     </head>
     <body>
@@ -670,7 +687,20 @@
                 </div>
             </p></div>
         </section>
-
+        <footer>
+            <div class="foot">
+            <p>
+                <em>Người làm website</em>: Phạm Thị Thu Huyền<br>
+                <em>Mã sinh viên </em>:1821051096<br>
+                <address>
+                    <div>
+                        <p><span class="footercolor">Email 1:</span><a href="mail to:thuhuyen02042000@gmail.com" target="_top">thuhuyen02042000@gmail.com</a></p>
+                         <p><span class="footercolor">Email 2:</span><a href="mail to:1821051096@student.humg.edu.vn" target="_top">1821051096@student.humg.edu.vn</a></p>
+                    </div>
+                </address>
+            </p>
+            </div>
+        </footer>
         </main>
         <script>
             $(function() {
